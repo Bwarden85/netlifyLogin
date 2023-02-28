@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="netlifysite" ng-conroller="netlifyCtrl">
+<html lang="en">
 
 <head>
     <title>Title</title>
@@ -14,13 +14,16 @@
 
 </head>
 
-<body>
+<body ng-app="netlifySite" ng-conroller="netlifyCtrl">
 
 
 
-
-    <main ng-view></main>
     <div data-netlify-identity-menu></div>
+    <main ng-view></main>
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

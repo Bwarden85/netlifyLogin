@@ -1,4 +1,4 @@
-const app = angular.module('netlifysite', ['ngRoute']);
+const app = angular.module("netlifySite", ["ngRoute"]);
 
 app.config(function ($routeProvider) {
     $routeProvider
