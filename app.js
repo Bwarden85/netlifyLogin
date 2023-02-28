@@ -3,14 +3,12 @@ const app = angular.module('netlifysite', ['ngRoute']);
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: 'index.html'
+            templateUrl: 'home.html'
         })
         .when("/home", {
             templateUrl: 'home.html'
-        })
-        .when("/contact", {
-            templateUrl: 'contact.html'
         });
+
 
 })
 
