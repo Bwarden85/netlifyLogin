@@ -16,16 +16,16 @@ app.config(function ($routeProvider) {
 
 app.controller("netlifyCtrl", function ($scope) {
 
-    netlifyIdentity.on('init', () => {
+    $scope.netlifyIdentity.on('init', () => {
         initUser = netlifyIdentity.currentUser();
     });
-    netlifyIdentity.on('login', () => {
+    $scope.netlifyIdentity.on('login', () => {
         if (initUser == null) {
             window.location.replace('#!home')
         }
         netlifyIdentity.close();
     });
-    netlifyIdentity.on('logout', () => {
+    $scope.netlifyIdentity.on('logout', () => {
         netlifyIdentity.close();
         window.location.replace('');
     });
