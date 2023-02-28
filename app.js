@@ -1,12 +1,13 @@
 const app = angular.module("netlifySite", ["ngRoute"]);
+const netlifyIdentity = require('netlify-identity-widget');
 
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: 'index.html'
+            templateUrl: "index.html"
         })
         .when("/home", {
-            templateUrl: 'home.html'
+            templateUrl: "home.html"
         });
 
 
