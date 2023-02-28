@@ -17,20 +17,60 @@ app.config(function ($routeProvider) {
 
 });
 
-app.controller("netlifyCtrl", function ($scope) {
+// app.controller("netlifyCtrl", function ($scope) {
+//     let initUser = netlifyIdentity.currentUser();
+
+//     netlifyIdentity.on('init', () => {
+//         initUser = netlifyIdentity.currentUser();
+//     });
+
+//     netlifyIdentity.on('login', () => {
+//         // debugger;
+
+//         // setTimeout(() => {
+
+            
+//         // }, 1000);
+
+//         if (initUser == null) {
+//             window.location.replace('#!landing')
+//         }
+//         netlifyIdentity.close();
+
+
+//     });
+
+//     netlifyIdentity.on('logout', () => {
+//         netlifyIdentity.close();
+//         window.location.replace('#!');
+//     });
+
+// });
+
+
+app.controller('netlifyCtrl', function ($scope) {
+
     let initUser = netlifyIdentity.currentUser();
+  
     netlifyIdentity.on('init', () => {
-        initUser = netlifyIdentity.currentUser();
+      initUser = netlifyIdentity.currentUser();
+  
+      console.log(initUser);
     });
+  
+  
     netlifyIdentity.on('login', () => {
-        if (initUser == null) {
-            window.location.replace('#!landing')
-        }
-        netlifyIdentity.close();
+      if (initUser == null) {
+        window.location.replace('#!landing');
+      }
+      netlifyIdentity.close();
     });
+  
     netlifyIdentity.on('logout', () => {
-        netlifyIdentity.close();
-        window.location.replace('#!');
+      netlifyIdentity.close();
+      window.location.replace('/');
     });
-    
-});
+  
+  
+  
+  });
