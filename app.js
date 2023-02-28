@@ -8,7 +8,7 @@ app.config(function ($routeProvider) {
             templateUrl: "test.html"
         })
         .when("/home", {
-            templateUrl: "landing.html"
+            templateUrl: "test.html"
         })
         .when("/landing", {
             templateUrl: "landing.html"
