@@ -10,5 +10,11 @@ netlifyIdentity.on('login', () => {
 netlifyIdentity.on('logout', () => {
     netlifyIdentity.close();
     window.location.replace('/')
-;
+        ;
 });
+
+let logout = () => {
+    netlifyAuth.signout(() => {
+        setLoggedIn(false)
+        setUser(null)
+    })};
