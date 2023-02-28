@@ -4,7 +4,7 @@ const netlifyIdentity = require('netlify-identity-widget');
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "index.html"
+            templateUrl: "home.html"
         })
         .when("/home", {
             templateUrl: "home.html"
