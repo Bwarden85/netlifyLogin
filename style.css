@@ -1,0 +1,44 @@
+.jumbotron-fluid {
+    height: 600px;
+    background-color: #d1c051 !important;
+}
+
+.headshotImg {
+    border-radius: 60%;
+    border: solid white;
+
+}
+
+.aboutMe {
+    height: 450px;
+}
+
+.aboutInfo {
+    height: 700px;
+}
+
+.bgColor {
+    background-color: #d1c051;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.bgColor2 {
+    background-color: #f8f9fb;
+}
+
+#textP {
+    font-size: 20px;
+}
+
+u{
+    text-decoration-color: #d1c051;
+}
