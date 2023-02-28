@@ -9,10 +9,10 @@ app.config(function ($routeProvider) {
         })
         .when("/home", {
             templateUrl: "test.html"
-        });
+        })
         .when("/landing",) {
             templateUrl: "landing.html"
-        }
+        };
 
 
 })
