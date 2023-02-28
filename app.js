@@ -27,7 +27,7 @@ app.controller("netlifyCtrl", function ($scope) {
     });
     netlifyIdentity.on('logout', () => {
         netlifyIdentity.close();
-        window.location.replace('#!');
+        window.location.replace('');
     });
     
 });
