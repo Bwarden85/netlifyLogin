@@ -3,7 +3,7 @@ const app = angular.module('netlifysite', ['ngRoute']);
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: 'home.html'
+            templateUrl: 'index.html'
         })
         .when("/home", {
             templateUrl: 'home.html'
