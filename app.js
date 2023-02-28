@@ -10,12 +10,12 @@ app.config(function ($routeProvider) {
         .when("/home", {
             templateUrl: "test.html"
         })
-        .when("/landing",) {
+        .when("/landing", {
             templateUrl: "landing.html"
-        };
+        });
 
 
-})
+});
 
 app.controller("netlifyCtrl", function ($scope) {
     let initUser = netlifyIdentity.currentUser();
