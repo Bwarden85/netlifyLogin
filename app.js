@@ -1,5 +1,5 @@
 const app = angular.module("netlifySite", ["ngRoute"]);
-const netlifyIdentity = require('netlify-identity-widget');
+// const netlifyIdentity = ('netlify-identity-widget');*/
 
 
 app.config(function ($routeProvider) {
