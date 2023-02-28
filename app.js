@@ -13,8 +13,3 @@ netlifyIdentity.on('logout', () => {
         ;
 });
 
-let logout = () => {
-    netlifyAuth.signout(() => {
-        setLoggedIn(false)
-        setUser(null)
-    })};
