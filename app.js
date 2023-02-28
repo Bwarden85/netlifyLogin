@@ -21,13 +21,13 @@ app.controller("netlifyCtrl", function ($scope) {
     });
     netlifyIdentity.on('login', () => {
         if (initUser == null) {
-            window.location.replace('home')
+            window.location.replace('#!home')
         }
         netlifyIdentity.close();
     });
     netlifyIdentity.on('logout', () => {
         netlifyIdentity.close();
-        window.location.replace('/');
+        window.location.replace('#!');
     });
     
 });
