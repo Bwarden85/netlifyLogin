@@ -4,7 +4,7 @@ const netlifyIdentity = require('netlify-identity-widget');
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "home.html"
+            templateUrl: "index.html"
         })
         .when("/home", {
             templateUrl: "home.html"
@@ -15,16 +15,16 @@ app.config(function ($routeProvider) {
 
 app.controller("netlifyCtrl", function ($scope) {
     initUser = netlifyIdentity.currentUser();
-    $scope.netlifyIdentity.on('init', () => {
+    netlifyIdentity.on('init', () => {
         initUser = netlifyIdentity.currentUser();
     });
-    $scope.netlifyIdentity.on('login', () => {
+    netlifyIdentity.on('login', () => {
         if (initUser == null) {
             window.location.replace('#!home')
         }
         netlifyIdentity.close();
     });
-    $scope.netlifyIdentity.on('logout', () => {
+    netlifyIdentity.on('logout', () => {
         netlifyIdentity.close();
         window.location.replace('/');
     });
